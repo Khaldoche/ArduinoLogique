@@ -1,0 +1,14 @@
+# Exclure les fichiers de cache Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Exclure les environnements virtuels
+venv/
+env/
+
+# Exclure les fichiers de configuration VSCode
+.vscode/
+
+# Exclure les fichiers de configuration des IDE
+.idea/
