@@ -68,3 +68,15 @@ fen.mainloop()
 ```
 ![résultat du code 1:](Images/ResultatMini170-1.png)
 
+Les lignes de code les plus essentielles sont:
+
+```python
+plaqueMini170 = [(pe.planche,1,{"lgLigne":17, "lgColonne":10, "sepAlim":[], "sepDistribution":[(2,4.5)]})]
+pe.circuit(canvas,xPlaque ,yPlaque, modele = plaqueMini170)
+```
+
+On crée un modèle plaqueMini170 c'est une liste contenant un appel de fonction et ses paramètres :
+[(appel d'une fonction ou une autre liste, nombre d'appel, paramètres)]
+
+La fonction appelée est planche() avec ses paramètres ici 10 bandes(lgColonne) de 17 trous (lgLigne) et un séparateur situé en x= 2+1 trous et y = 4.5 +1 bande de trou.
+
