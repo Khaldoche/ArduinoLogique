@@ -66,4 +66,5 @@ pe.circuit(canvas,xPlaque ,yPlaque, modele = plaqueMini170)
 
 fen.mainloop()
 ```
+![résultat du code 1:](Images/ResultatMini170-1.png)
 
