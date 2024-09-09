@@ -44,4 +44,26 @@ Il existe 4 types de platine standart:
 Le code permet de créer toutes ces plaques ou d'autres plus exotiques.
 Le code exemple qui suit va nous permettre de concevoir la mini plaque de 170 points.
 
+Nous commençons par créer la plaque avec son fond:
+
+```python
+
+import tkinter as tk
+import platineEssai as pe
+from tkinter import font
+
+fen = tk.Tk()
+fen.title("Laboratoire virtuel de circuit logique - GIF-1002")
+
+# Créer un canvas (surface sur laquelle on dessine)
+canvas = tk.Canvas(fen, width=1500, height=900)
+canvas.pack()
+
+xPlaque, yPlaque = 50,10
+pe.init(canvas)
+plaqueMini170 = [(pe.planche,1,{"lgLigne":17, "lgColonne":10, "sepAlim":[], "sepDistribution":[(2,4.5)]})]
+pe.circuit(canvas,xPlaque ,yPlaque, modele = plaqueMini170)
+
+fen.mainloop()
+```
 
